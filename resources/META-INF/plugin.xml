@@ -1,0 +1,44 @@
+<idea-plugin version="2">
+    <id>com.glp.pojoplugin</id>
+    <name>Value Class Generator</name>
+    <version>1.0</version>
+    <vendor email="mkring90@[at]gmail.com" url="https://github.com/Ingwersaft/ValueClassGenerator">Marcel Kesselring
+    </vendor>
+
+    <description><![CDATA[
+      IntelliJ IDEA Plugin that helps generating Value classes without the need to add any libs to your build (like google autovalue or project lombok).<br><br>
+
+      usage:
+      1. Create your data class and define your properties
+      2. right-click into the editor and click onto the `Generate value class` button
+    ]]></description>
+
+    <!--<change-notes><![CDATA[-->
+    <!--Add change notes here.<br>-->
+    <!--<em>most HTML tags may be used</em>-->
+    <!--]]>-->
+    <!--</change-notes>-->
+
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+    <idea-version since-build="94.539"/>
+
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <!-- uncomment to enable plugin in all products
+    <depends>com.intellij.modules.lang</depends>
+    -->
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+    </extensions>
+
+    <actions>
+        <!-- Add your actions here -->
+        <action id="GenerateValueClass" class="com.glp.pojoplugin.GenerateValueClass"
+                text="Generate value class"
+                description="for the currently selected file, generate a value class">
+            <add-to-group group-id="EditorPopupMenu" anchor="last"/>
+        </action>
+    </actions>
+
+</idea-plugin>

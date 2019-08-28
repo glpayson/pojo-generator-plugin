@@ -1,0 +1,46 @@
+# Compiled source #
+###################
+*.class
+dependency-reduced-pom.xml
+
+# Packages #
+############
+*.7z
+*.dmg
+*.gz
+*.iso
+*.rar
+*.tar
+*.zip
+*.war
+*.ear
+
+# Build output directories #
+############################
+/target
+/out
+
+# IntelliJ specific files/directories #
+######################################
+*.iml
+.idea/
+
+# Eclipse specific files/directories #
+######################################
+*.classpath
+*.project
+*.settings
+*.metadata
+
+# OSX #
+#######
+*.DS_Store
+
+# Development #
+###############
+/dev
+
+# Vim #
+#######
+*.swp
+*.swo
